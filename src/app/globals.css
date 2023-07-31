@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS file or inline styles */
+@media (max-width: 768px) { /* Medium screens and below */
+    .grid-cols-1 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) { /* Large screens */
+    .grid-cols-1 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1025px) { /* Extra-large screens */
+    .grid-cols-1 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
